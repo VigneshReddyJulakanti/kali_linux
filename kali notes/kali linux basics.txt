@@ -1,0 +1,59 @@
+kali
+
+username : boooom     ,   pass: boooom
+rootusername: boooom  , pass: boooom
+
+
+BASICS
+
+--> Open terminal  : ctrl + alt + T
+
+--> shows current directory : pwd
+
+--> As which user are u logged in as : whoami
+
+--> To open any root directory : cd /dir_name_to_be_opened
+--> To open a directory : cd dir_name_to_be_opened
+
+-->To move back in dir : cd ..          { you can even use " .. .." to move to dir back , you can even use " .. .. .." to move 3 dir back
+
+--> listing the components of a dir : ls
+--> listing components of a particular dir : ls dir
+--> to see more details in listing : ls -l             { THis is called long listing}
+-->Some are hidden to see them we need to use -a : ls -la
+
+--> For help command name followed by  :        --help or -h or -?              { if one doesn't work use other one }  { ex :   aircrack -ng --help      or  nmap -h  }
+
+--> To open manual page for any command , use man before command : man nmap   { Now this will open the manual page u can scroll using the enter button or scroll up and scroll down , and enter q to exit } 
+
+
+LOCATE SOMETHING
+
+--> locate followed by the thing to be located will give the info , but this will give a lot info  and is updated only once a day so u can not get the file u created minutes ago : locate nmap  { Will display its every occurance } 
+
+
+--> to search binary : whereis nmap { This will return the binary file location , manual page if available and the source code  , but not its every occurance 
+
+--> TO get the location of binary in the path variable  : which nmap
+
+FInd
+
+--> Basic syntax : find directory options expression
+ex : find / -type f -name apache2
+Here f stands for normal file type
+This command will only search the given directory and gives only the fully corectly matched results
+
+This also do not find the files that have extensions other than the name 
+so to escape from this problem we use wildcards
+ex : find / -type f -name apache2.*
+SO now it wiil show files with all extensions
+
+
+
+
+
+Conventions in LInux
+
+-> Use single dash before a single letter options such as -a  { exceptions : in find before type and name only single -}
+
+-> Use double dash before a word options such as --help
